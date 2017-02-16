@@ -1,5 +1,5 @@
 //
-//  NatWeexVibration.h
+//  WeexNatVibration.h
 //
 //  Created by huangyake on 17/1/7.
 //  Copyright © 2017 Nat. All rights reserved.
@@ -9,12 +9,12 @@
 #import <WeexSDK/WeexSDK.h>
 
 
-@protocol NatWeexVibrationPro <WXModuleProtocol>
+@protocol WeexNatVibrationPro <WXModuleProtocol>
 
 - (void)vibrate:(NSNumber *)time :(WXModuleCallback)callback;
 
 @end
 
-@interface NatWeexVibration : NSObject<NatWeexVibrationPro>
+@interface WeexNatVibration : NSObject<WeexNatVibrationPro>
 
 @end

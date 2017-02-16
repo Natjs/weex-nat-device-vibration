@@ -1,15 +1,15 @@
 //
-//  NatWeexVibration.m
+//  WeexNatVibration.m
 //
 //  Created by huangyake on 17/1/7.
 //  Copyright © 2017 Nat. All rights reserved.
 //
 
 
-#import "NatWeexVibration.h"
+#import "WeexNatVibration.h"
 #import "NatVibration.h"
 
-@implementation NatWeexVibration
+@implementation WeexNatVibration
 WX_EXPORT_METHOD(@selector(vibrate::))
 
 - (void)vibrate:(NSNumber *)time :(WXModuleCallback)callback{
