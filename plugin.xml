@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>headers
+<?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://www.w3.org/ns/widgets"
     id="nat-device-vibration"
@@ -26,6 +26,23 @@
 
      <!-- android -->
      <platform name="android">
+        <config-file target="config.xml" parent="/*">
+             <feature name="DeviceVibrationModule">
+                 <param name="category" value="module" />
+                 <param name="android-package" value="com.nat.weex.DeviceVibrationModule" />
+                 <param name="api" value="nat/device/vibration" />
+             </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+             <uses-permission android:name="android.permission.VIBRATE" />
+        </config-file>
+
+        <source-file
+             src="android/DeviceVibrationModule.java"
+            target-dir="src/com/alibaba/weex/nat/DeviceVibrationModule.java" />
+
+        <framework src="com.nat:device-vibration:1.0.1" />
      </platform>
 
 </plugin>
