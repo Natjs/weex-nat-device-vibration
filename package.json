@@ -1,6 +1,6 @@
 {
   "name": "nat-device-vibration",
-  "version": "0.0.1",
+  "version": "0.1.2",
   "description": "Nat.js module: Vibration",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

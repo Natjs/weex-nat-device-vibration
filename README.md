@@ -1,12 +1,15 @@
 # nat-device-vibration
 
+- [Documentation](http://natjs.com/#/#vibration)
+- [Github](https://github.com/natjs/weex-nat-device-vibration)
+
 ## Installation
 ```
 weexpack plugin add nat-device-vibration
 ```
 
 ```
-npm install weex-nat --save
+npm install natjs --save
 ```
 
 ## Usage
@@ -15,7 +18,7 @@ Use in weex file (.we)
 
 ```html
 <script>
-import 'Nat' from 'weex-nat'
+import 'Nat' from 'natjs'
 
 // vibrate
 Nat.vibrate()

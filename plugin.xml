@@ -2,13 +2,13 @@
 
 <plugin xmlns="http://www.w3.org/ns/widgets"
     id="nat-device-vibration"
-    version="0.1.0">
+    version="0.1.2">
     <name>nat-device-vibration</name>
-    <description></description>
+    <description>Nat.js module: Vibration</description>
     <license>MIT</license>
-    <keywords>weex,plugin,nat,natjs,vibration</keywords>
-    <repo>https://github.com/Natjs/weex-nat-device-vibration.git</repo>
-    <issue>https://github.com/Natjs/weex-nat-device-vibration/issues</issue>
+    <keywords>weex,plugin,nat,natjs,device,vibration</keywords>
+    <repo>https://github.com/natjs/weex-nat-device-vibration.git</repo>
+    <issue>https://github.com/natjs/weex-nat-device-vibration/issues</issue>
     
      <!-- ios -->
      <platform name="ios">
