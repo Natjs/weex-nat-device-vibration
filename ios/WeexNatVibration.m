@@ -2,7 +2,7 @@
 //  WeexNatVibration.m
 //
 //  Created by huangyake on 17/1/7.
-//  Copyright © 2017 Nat. All rights reserved.
+//  Copyright © 2017 Instapp. All rights reserved.
 //
 
 
@@ -10,6 +10,7 @@
 #import "NatVibration.h"
 
 @implementation WeexNatVibration
+@synthesize weexInstance;
 WX_EXPORT_METHOD(@selector(vibrate::))
 
 - (void)vibrate:(NSNumber *)time :(WXModuleCallback)callback{

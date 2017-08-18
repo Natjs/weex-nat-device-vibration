@@ -1,21 +1,22 @@
 package com.nat.weex;
 
-import com.nat.device_vibration.HLModuleResultListener;
-import com.nat.device_vibration.HLVibrationModule;
+import com.nat.device_vibration.VibrationModule;
+import com.nat.device_vibration.ModuleResultListener;
+
 import com.taobao.weex.annotation.JSMethod;
 import com.taobao.weex.bridge.JSCallback;
 import com.taobao.weex.common.WXModule;
 
 /**
- * Created by Daniel on 17/2/17.
- * Copyright (c) 2017 Nat. All rights reserved.
+ * Created by Acathur on 17/2/17.
+ * Copyright (c) 2017 Instapp. All rights reserved.
  */
 
-public class DeviceVibrationModule extends WXModule{
+public class DeviceVibration extends WXModule{
 
     @JSMethod
     public void vibrate(int time, final JSCallback jsCallback){
-        HLVibrationModule.getInstance(mWXSDKInstance.getContext()).vibrate(time, new HLModuleResultListener() {
+        VibrationModule.getInstance(mWXSDKInstance.getContext()).vibrate(time, new ModuleResultListener() {
             @Override
             public void onResult(Object o) {
                 jsCallback.invoke(o);

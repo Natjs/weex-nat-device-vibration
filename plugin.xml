@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://www.w3.org/ns/widgets"
     id="nat-device-vibration"
-    version="0.1.2">
+    version="0.1.3">
     <name>nat-device-vibration</name>
     <description>Nat.js module: Vibration</description>
     <license>MIT</license>
@@ -12,24 +12,26 @@
     
      <!-- ios -->
      <platform name="ios">
-         <framework src="NatVibration" type="podspec" spec="" />
          <config-file target="WeexpluginConfig.xml" parent="/*">
-             <feature name="WXTestModule">
+             <feature name="WeexNatVibration">
                  <param name="category" value="module" />
                  <param name="ios-package" value="WeexNatVibration" />
                  <param name="api" value="nat/device/vibration" />
              </feature>
          </config-file>
+         
          <header-file src="ios/WeexNatVibration.h"/>
          <source-file src="ios/WeexNatVibration.m"/>
+         
+         <framework src="NatVibration" type="podspec" spec="0.0.1" />
      </platform>
 
      <!-- android -->
      <platform name="android">
         <config-file target="config.xml" parent="/*">
-             <feature name="DeviceVibrationModule">
+             <feature name="DeviceVibration">
                  <param name="category" value="module" />
-                 <param name="android-package" value="com.nat.weex.DeviceVibrationModule" />
+                 <param name="android-package" value="com.nat.weex.DeviceVibration" />
                  <param name="api" value="nat/device/vibration" />
              </feature>
         </config-file>
@@ -38,11 +40,9 @@
              <uses-permission android:name="android.permission.VIBRATE" />
         </config-file>
 
-        <source-file
-             src="android/DeviceVibrationModule.java"
-            target-dir="src/com/alibaba/weex/nat/DeviceVibrationModule.java" />
+        <source-file src="android/DeviceVibration.java" target-dir="src/com/instapp/nat/device/vibration" />
 
-        <framework src="com.nat:device-vibration:1.0.1" />
+        <framework src="com.nat:device-vibration:1.0.3" />
      </platform>
 
 </plugin>
